@@ -1,0 +1,33 @@
+downloadimages:
+  MySQL8:
+    features: [mysql]
+    name: mysql
+    tag: 8.0
+  MySQL5_7:
+    features: [mysql]
+    name: mysql
+    tag: 5.7
+  MySQL5_6:
+    features: [mysql]
+    name: mysql
+    tag: 5.6
+  Postgres10:
+    features: [postgres]
+    name: postgres
+    tag: 10
+  Postgres9_6:
+    features: [postgres]
+    name: postgres
+    tag: 9.6
+  Postgres9_5:
+    features: [postgres]
+    name: postgres
+    tag: 9.5
+
+buildingrules:
+  KanbanMysql:
+    requires: [mysql]
+    adds: [kanban_mysql]
+  KanbanPostgres:
+    requires: [postgres]
+    adds: [kanban_postgres]

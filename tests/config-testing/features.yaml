@@ -1,0 +1,4 @@
+db:
+  mysql: [mysql8, mysql5_7, mysql5_6]
+  postgres: [postgres10, postgres9.6, postgres9.5]
+kanban: [kanban_postgres, kanban_mysql]
